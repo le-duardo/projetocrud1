@@ -11,7 +11,7 @@ No terminal, dar o comando "npm install" para instalar os seguintes componentes:
 - express
 
 Banco de dados utilizado:
--Mysql
+- Mysql
 
 Observações: 
 Função alterar inacabada.
