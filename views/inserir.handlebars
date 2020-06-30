@@ -1,0 +1,118 @@
+<style>
+
+    header {
+    text-align: center;
+}
+
+header img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#principal form {
+    background-color: white; 
+    justify-content: space-evenly;   
+}
+
+#principal form .pt1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#principal form .pt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#principal form .pt1 label {
+    margin: 14px;
+    font-weight: bold;
+    margin-right: 50px;
+    
+}
+
+#principal form .pt1 input {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 22px;
+    width: 350px;
+}
+
+button {
+    margin-top: 36px;
+    height: 44px;
+    background-color: rgb(166, 228, 105);
+    font-weight: bold;
+    width: 250px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+nav a{
+    padding: 12px;
+    width: 50%;
+    background-color: rgb(182, 245, 119);
+}
+
+</style>
+
+<div id="principal">
+
+        <header>
+            <img src="./img/pata1.jpg" alt="">
+            
+                <h1>ZOO REGISTER</h1>
+    
+                <h2> Sua ferramenta de organização animal</h2>
+        </header>
+
+ <nav>
+        
+        <a href="inserir">Inserir</a>
+        <a href="select">Listar</a>
+
+    </nav>
+        
+        <form name="form1" action="controlleradd" method="POST">
+            
+                <div class="pt1">
+                    <label> ID do animal: </label>
+                    <input type="number" name="id" id="id">
+                </div>
+
+                <div class="pt1">
+                    <label> Especie do animal: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="pt1">
+                    <label> Tipo do animal </label>
+                    <input type="text" name="tipoa" id="tipoa">
+                </div>
+
+                <div class="pt2"> 
+
+                    <button type="submit" value="Inserir"> Cadastrar animal </button>
+                </div>
+            
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+

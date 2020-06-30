@@ -1,0 +1,74 @@
+<style>
+
+    header{
+        text-align: center;
+       padding-top: 26px;
+    }
+    table{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        padding: 5px;
+        height: 100vh;
+        border: 5px solid black;
+       
+    }
+    td{ 
+       
+        background-color: rgb(115, 235, 189);
+        text-align: center;
+        height: 50px;
+        width: 150px;
+        border-radius: 8px;
+    }
+    th{
+        font-weight: bold;
+
+    }
+    
+    nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+    nav a{
+    padding: 12px;
+    width: 50%;
+    background-color: rgb(182, 245, 119);
+}
+</style>
+<header>
+    <h1>ANIMAIS CADASTRADOS</h1>
+
+    
+</header>
+ <nav>
+        
+        <a href="inserir">Inserir</a>
+        <a href="select">Listar</a>
+
+    </nav>
+<div class="tabela">
+    <div>
+            <table>
+                <tr>
+                    <th>Ação</th>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Tipo do animal</th>
+                </tr>
+
+                {{#data}}
+                <tr>
+                    <td>
+                        <a href="deletar/{{id}}"><button >Deletar</button></a>
+                        <a href="update/{{id}}"><button>Alterar</button></a>
+                    </td>
+                    <td>{{id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{tipoa}}</td>
+                </tr>
+                {{/data}}
+            </table>
+    </div>
+</div>
